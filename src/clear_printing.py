@@ -8,6 +8,6 @@ def print_result(table, headers, float_frm):
 
     os.system('PAUSE' if os.name == 'nt' else 'read -p ""')
 
-def execute_and_clear(function):
+def execute_and_clear(function, *args):
     os.system('cls' if os.name == 'nt' else 'clear')
-    return function()
+    return function(*args)
