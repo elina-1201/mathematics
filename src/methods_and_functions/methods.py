@@ -18,23 +18,23 @@ def regula_falsi_i_sjecica(a, func_a, b, func_b):
         print ("Math error!")
         return
 
-    razlomak = (b - a) / (func_b - func_a)
-    c = b - razlomak * func_b
+    fraction = (b - a) / (func_b - func_a)
+    c = b - fraction * func_b
 
     return c
 
 def newton_raphston(x0, func_x0, func):
     func_der = derivative(func, x0)
 
-    razlomak = func_x0 / func_der
-    x = x0 - razlomak
+    fraction = func_x0 / func_der
+    x = x0 - fraction
 
     return x
 
 def newton_raphston_modified(x0, func_x0, func, first_x):
     func_der = derivative(func, first_x)
 
-    razlomak = func_x0 / func_der
-    x = x0 - razlomak
+    fraction = func_x0 / func_der
+    x = x0 - fraction
 
     return x
